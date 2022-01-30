@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="static/bootstrap.min.css">
+    <link rel="shortcut icon" href="static/images/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="static/index.css">
+    <link rel="stylesheet" type="text/css" href="static/jquery/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="static/bootstrap-icons.css">
+    
+    
+    <title>POS-TERMINAL</title>
+</head>
+<body>
+    <div class="main-bg">
+        <div class="print-box">
+            <div>
+                <img />
+            </div>
+            <div>
+               <span>price</span>
+            </div>
+        </div>
+        <div class="pos-container">
+            <section>
+                <nav class="pos-top">
+                  <li>
+                    <div>
+                      <a id="menu-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#303f9f" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                            <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"/>
+                          </svg>
+                      </a>
+                      <div class="pos-menu hide-menu">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#303f9f" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                            </svg>
+                            <p>Saliu Adewale</p>
+                            <p class="email-info">allenmoreno@gmail.com</p>
+                        </div>
+                        <div>
+                            <a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#303f9f" class="bi bi-person" viewBox="0 0 16 16">
+                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                                  </svg>
+                                <label>My Profile</label>
+                            </a>
+                                <a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#303f9f" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+                                        <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                        <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                                      </svg>
+                                    <label>Messages</label>
+                                </a>
+                                <a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#303f9f" class="bi bi-calendar-check" viewBox="0 0 16 16">
+                                        <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                                        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                      </svg>
+                                    <label>Activity</label>
+                                </a>
+                                <a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#303f9f" class="bi bi-power" viewBox="0 0 16 16">
+                                        <path d="M7.5 1v7h1V1h-1z"/>
+                                        <path d="M3 8.812a4.999 4.999 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812z"/>
+                                      </svg>
+                                      <label>Sign Out</label>
+                                    </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="input-group">
+                      <label class="input-group-label"></label>
+                      <div class="input-group-append">
+                        <span id="datepicker-icon" class="input-group-text border-right">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#303f9f" class="bi bi-calendar-check" viewBox="0 0 16 16">
+                                <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                              </svg>
+                        </span>
+                      </div>
+                      <input id="datepicker" class="form-control-ms" type="text" name="date" disabled>
+                    </div>
+                  </li>
+                </nav>
+                <div class="pos-item1">
+                    <div class="pos-cloth-items">
+                        <section id="pos-p-1">
+                            <div>
+                                <span>Men</span>
+                                <span class="item-name men-category"><strong>Necktie</strong></span>
+                            </div>
+                            <div>
+                                <span>Men</span>
+                                <span class="item-name men-category"><strong>Long Sleeves</strong></span>
+                            </div>
+                            <div>
+                                <span>Men</span>
+                                <span class="item-name men-category"><strong>Short Sleeves</strong></span>
+                            </div>
+                            <div>
+                                <span>Men</span>
+                                <span class="item-name men-category"><strong>Overcoat</strong></span>
+                            </div>
+                            <div>
+                                <span>Men</span>
+                                <span class="item-name men-category"><strong>Vest</strong></span>
+                            </div>
+                            <div>
+                                <span>Men</span>
+                                <span class="item-name men-category"><strong>Blazer</strong></span>
+                            </div>
+                            <div>
+                                <span>Men</span>
+                                <span class="item-name men-category"><strong>Suit</strong></span>
+                            </div>
+                            <div>
+                                <span>Men</span>
+                                <span class="item-name men-category"><strong>Trouser/Pants</strong></span>
+                            </div>
+                            <div>
+                                <span>Men</span>
+                                <span class="item-name men-category"><strong>Jacket</strong></span>
+                            </div>
+                        </section>
+                        <section id="pos-p-2" class="hide">
+                                <div>
+                                    <span>Women</span>
+                                    <span class="item-name women-category"><strong>Necktie</strong></span>
+                                </div>
+                                <div>
+                                    <span>Women</span>
+                                    <span class="item-name women-category"><strong>Long Sleeves</strong></span>
+                                </div>
+                                <div>
+                                    <span>Women</span>
+                                    <span class="item-name women-category"><strong>Short Sleeves</strong></span>
+                                </div>
+                                <div>
+                                    <span>Women</span>
+                                    <span class="item-name women-category"><strong>Skirt</strong></span>
+                                </div>
+                                <div>
+                                    <span>Women</span>
+                                    <span class="item-name women-category"><strong>Gown</strong></span>
+                                </div>
+                                <div>
+                                    <span>Women</span>
+                                    <span class="item-name women-category"><strong>Scarf</strong></span>
+                                </div>
+                                <div>
+                                    <span>Women</span>
+                                    <span class="item-name women-category"><strong>Overcoat</strong></span>
+                                </div>
+                                <div>
+                                    <span>Women</span>
+                                    <span class="item-name women-category"><strong>Vest</strong></span>
+                                </div>
+                                <div>
+                                    <span>Women</span>
+                                    <span class="item-name women-category"><strong>Blazer</strong></span>
+                                </div>
+                                <div>
+                                    <span>Women</span>
+                                    <span class="item-name women-category"><strong>Suit</strong></span>
+                                </div>
+                                <div>
+                                    <span>Women</span>
+                                    <span class="item-name women-category"><strong>Trouser/Pants</strong></span>
+                                </div>
+                                <div>
+                                    <span>Women</span>
+                                    <span class="item-name women-category"><strong>Jacket</strong></span>
+                                </div>
+                        </section>
+                        <section id="pos-p-3" class="hide">
+                                <div>
+                                    <span>Kids</span>
+                                    <span class="item-name kids-category"><strong>Necktie</strong></span>
+                                </div>
+                                <div>
+                                    <span>Kids</span>
+                                    <span class="item-name kids-category"><strong>Long Sleeves</strong></span>
+                                </div>
+                                <div>
+                                    <span>kidsKids</span>
+                                    <span class="item-name kids-category"><strong>Short Sleeves</strong></span>
+                                </div>
+                                <div>
+                                    <span>Kids</span>
+                                    <span class="item-name kids-category"><strong>Skirt</strong></span>
+                                </div>
+                                <div>
+                                    <span>Kids</span>
+                                    <span class="item-name kids-category"><strong>Gown</strong></span>
+                                </div>
+                                <div>
+                                    <span>Kids</span>
+                                    <span class="item-name kids-category"><strong>Scarf</strong></span>
+                                </div>
+                                <div>
+                                    <span>Kids</span>
+                                    <span class="item-name kids-category"><strong>Overcoat</strong></span>
+                                </div>
+                                <div>
+                                    <span>Kids</span>
+                                    <span class="item-name kids-category"><strong>Vest</strong></span>
+                                </div>
+                                <div>
+                                    <span>Kids</span>
+                                    <span class="item-name kids-category"><strong>Blazer</strong></span>
+                                </div>
+                                <div>
+                                    <span>Kids</span>
+                                    <span class="item-name kids-category"><strong>Suit</strong></span>
+                                </div>
+                                <div>
+                                    <span>Kids</span>
+                                    <span class="item-name kids-category"><strong>Trouser/Pants</strong></span>
+                                </div>
+                                <div>
+                                    <span>Kids</span>
+                                    <span class="item-name kids-category"><strong>Jacket</strong></span>
+                                </div>
+                        </section>
+                    </div> 
+                </div>
+                <div class="pos-tabs">
+                  <a id="tab-men" href="#Men">Men</a>
+                  <a id="tab-women" href="#Women">Women</a>
+                  <a id="tab-kids" href="#Kids">Kids</a>
+                  <a id="tab-others" href="#Others">Others</a>
+              </div>
+            </section>
+            <div class="pos-item2">
+                <div class="list-items">
+                    
+                </div>
+                <div class="pricing-cashout">
+                    <div>
+                        <label for="">Customer Name</label>
+                        <input type="text" name="" id="" >
+                    </div>
+                    <div>
+                        <label>Total</label>
+                        <label class="total-price">0</label>
+                    </div>
+                    <button id="checkout" disabled>PAY</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="static/jquery/external/jquery/jquery.js"></script>
+    <script src="static/jquery/jquery-ui.min.js"></script>
+    <script src="static/lottie.js"></script>
+    <script src="static/index.js"></script>
+</body>
+</html>
